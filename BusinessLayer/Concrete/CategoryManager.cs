@@ -14,19 +14,31 @@ namespace BusinessLayer.Concrete
     {
         ICategoryDal _categoryDal;
 
-        public CategoryManager()
-        {
-
-        }
-
         public CategoryManager(ICategoryDal categoryDal)
         {
             _categoryDal = categoryDal;
+        }
+
+        public void CategoryAdd(Category category)
+        {
+            _categoryDal.Insert(category);
         }
 
         public List<Category> GetList()
         {
             return _categoryDal.List();
         }
+
+        //public void CategoryAddBL(Category p)
+        //{
+        //    if (p.CategoryName == "" || p.CategoryStatus == false || p.CategoryName.Length <= 2)
+        //    {
+        //        // error message
+        //    }
+        //    else
+        //    {
+        //        _categoryDal.Insert(p);
+        //    }
+        //}
     }
 }
