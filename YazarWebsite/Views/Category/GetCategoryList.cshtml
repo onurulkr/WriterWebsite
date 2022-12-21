@@ -10,7 +10,6 @@
     <tr>
         <th>Id</th>
         <th>Ad</th>
-        <th>Açıklama</th>
         <th>Durum</th>
     </tr>
     @foreach (var item in Model)
@@ -18,7 +17,6 @@
         <tr>
             <td>@item.CategoryId</td>
             <td>@item.CategoryName</td>
-            <td>@item.CategoryDescription</td>
             <td>@item.CategoryStatus</td>
         </tr>
     }
