@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete.Repositories;
+using EntityLayer.Concrete;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    class EfHeadingDal
+    public class EfHeadingDal : GenericRepository<Heading>, IHeadingDal
     {
     }
 }

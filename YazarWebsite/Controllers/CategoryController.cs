@@ -15,6 +15,7 @@ namespace YazarWebsite.Controllers
     {
         // GET: Category
         CategoryManager cm = new CategoryManager(new EfCategoryDal());
+        CategoryValidator categoryValidator = new CategoryValidator();
 
         public ActionResult Index()
         {
@@ -37,7 +38,6 @@ namespace YazarWebsite.Controllers
         [HttpPost]
         public ActionResult AddCategory(Category p)
         {
-            CategoryValidator categoryValidator = new CategoryValidator();
             ValidationResult results = categoryValidator.Validate(p);
             if (results.IsValid)
             {
