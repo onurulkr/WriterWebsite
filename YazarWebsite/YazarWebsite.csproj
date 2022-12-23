@@ -135,6 +135,7 @@
     <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\WriterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -330,6 +331,7 @@
     <Content Include="AdminLTE-3.0.4\pages\forms\general.html" />
     <Content Include="AdminLTE-3.0.4\pages\forms\validation.html" />
     <Content Include="AdminLTE-3.0.4\pages\gallery.html" />
+    <Content Include="AdminLTE-3.0.4\pages\Image %281%29a.jpeg" />
     <Content Include="AdminLTE-3.0.4\pages\layout\boxed.html" />
     <Content Include="AdminLTE-3.0.4\pages\layout\collapsed-sidebar.html" />
     <Content Include="AdminLTE-3.0.4\pages\layout\fixed-footer.html" />
@@ -2272,6 +2274,7 @@
     <Content Include="Views\AdminCategory\Index.cshtml" />
     <Content Include="Views\AdminCategory\AddCategory.cshtml" />
     <Content Include="Views\AdminCategory\EditCategory.cshtml" />
+    <Content Include="Views\Writer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
