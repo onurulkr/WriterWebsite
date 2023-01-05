@@ -16,6 +16,7 @@ namespace YazarWebsite.Controllers
         CategoryManager cm = new CategoryManager(new EfCategoryDal());
         CategoryValidator categoryvalidator = new CategoryValidator();
 
+        [Authorize]
         public ActionResult Index()
         {
             var categoryvalues = cm.GetList();
