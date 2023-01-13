@@ -53,6 +53,7 @@ namespace YazarWebsite.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public ActionResult EditHeading(int id)
         {
             List<SelectListItem> valuecategory = (from x in cm.GetList()
