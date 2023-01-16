@@ -11,18 +11,18 @@ namespace WebMVC.Controllers
 {
     public class ContactController : Controller
     {
-
         ContactManager cm = new ContactManager(new EfContactDal());
 
         ContactValidator cv = new ContactValidator();
 
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var contactvalues = cm.GetList();
 
             return View(contactvalues);
         }
-                
+
         public ActionResult GetContactDetails(int id)
         {
             var contactvalues = cm.GetById(id);
