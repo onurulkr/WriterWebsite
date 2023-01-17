@@ -17,16 +17,16 @@ namespace YazarWebsite.Controllers
         MessageValidator messageValidator = new MessageValidator();
 
         [Authorize]
-        public ActionResult Inbox()
+        public ActionResult Inbox(string p)
         {
-            var messageList = mm.GetListInbox();
+            var messageList = mm.GetListInbox(p);
 
             return View(messageList);
         }
 
-        public ActionResult SendBox()
+        public ActionResult SendBox(string p)
         {
-            var messageList = mm.GetListSendbox();
+            var messageList = mm.GetListSendbox(p);
 
             return View(messageList);
         }
