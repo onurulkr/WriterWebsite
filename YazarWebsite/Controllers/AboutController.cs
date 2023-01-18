@@ -34,3 +34,8 @@ namespace YazarWebsite.Controllers
         }
     }
 }
+//< customErrors mode = "On" >
+ 
+//      < error statusCode = "404" redirect = "/ErrorPage/404/" />
+  
+//      </ customErrors >

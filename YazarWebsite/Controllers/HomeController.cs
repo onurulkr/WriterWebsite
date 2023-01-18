@@ -26,5 +26,11 @@ namespace YazarWebsite.Controllers
 
             return View();
         }
+
+        [AllowAnonymous]
+        public ActionResult HomePage()
+        {
+            return View();
+        }
     }
 }
