@@ -329,6 +329,12 @@
     <Content Include="AdminLTE-3.0.4\images\moskova.jpg" />
     <Content Include="AdminLTE-3.0.4\images\newyork.jpg" />
     <Content Include="AdminLTE-3.0.4\images\paris.jpeg" />
+    <Content Include="AdminLTE-3.0.4\web\images\ProjeEkranResmi1.png" />
+    <Content Include="AdminLTE-3.0.4\web\images\ProjeEkranResmi2.png" />
+    <Content Include="AdminLTE-3.0.4\web\images\ProjeEkranResmi3.png" />
+    <Content Include="AdminLTE-3.0.4\web\images\ProjeEkranResmi4.png" />
+    <Content Include="AdminLTE-3.0.4\web\images\ProjeEkranResmi5.png" />
+    <Content Include="AdminLTE-3.0.4\web\images\ProjeEkranResmi6.png" />
     <Content Include="AdminLTE-3.0.4\images\roma.jpg" />
     <Content Include="AdminLTE-3.0.4\index.html" />
     <Content Include="AdminLTE-3.0.4\index2.html" />
@@ -2063,6 +2069,9 @@
     <Content Include="AdminLTE-3.0.4\web\images\move_up.png" />
     <Content Include="AdminLTE-3.0.4\web\images\next.png" />
     <Content Include="AdminLTE-3.0.4\web\images\prev.png" />
+    <Content Include="AdminLTE-3.0.4\web\images\ProjeEkranResmi7.png" />
+    <Content Include="AdminLTE-3.0.4\web\images\ProjeEkranResmi8.png" />
+    <Content Include="AdminLTE-3.0.4\web\images\ProjeEkranResmi9.png" />
     <Content Include="AdminLTE-3.0.4\web\images\serve.jpg" />
     <Content Include="AdminLTE-3.0.4\web\images\stats.jpg" />
     <Content Include="AdminLTE-3.0.4\web\images\testimonials.jpg" />
@@ -2627,6 +2636,7 @@
     <Content Include="Views\WriterPanelContent\AddContent.cshtml" />
     <Content Include="Views\WriterPanelContent\ToDoList.cshtml" />
     <Content Include="Views\Home\HomePage.cshtml" />
+    <Content Include="Views\Content\GetAllContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
