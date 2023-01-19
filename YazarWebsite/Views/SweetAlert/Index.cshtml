@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<br />
+<br />
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+<h1 style="text-align:center;font-weight:bold;color:brown;">SWEET ALERT ÖRNEKLERİ</h1>
+
+<div style="text-align:center;margin-top:10%">
+
+    <button class="btn btn-info" id="btn1">Örnek 1</button>
+
+    <button class="btn btn-danger" id="btn2">Örnek 2</button>
+
+    <button class="btn btn-dark" id="btn3">Örnek 3</button>
+
+</div>
+
+<script>
+    $('#btn1').click(function () {
+        swal({
+            title: "İyi iş çıkardın! :)",
+            text: "Yazar Website",
+            icon: "success",
+            button: "Geri dön!",
+        });
+    });
+
+    $('#btn2').click(function () {
+        swal({
+            title: "Emin misiniz?",
+            text: "Silindikten sonra bu dosyayı kurtaramazsınız.",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("Poof! Dosyayı sildiniz!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Dosya silmediniz!");
+                }
+            });
+    });
+
+    $('#btn3').click(function () {
+        swal("Bunu yapmak istediğine emin misin?", {
+            buttons: ["Hayır", "Evet"],
+        });
+    });
+
+</script>
