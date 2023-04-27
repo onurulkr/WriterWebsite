@@ -32,6 +32,6 @@ namespace YazarWebsite.Controllers
             var contentvalues = cm.GetListByHeadingId(id);
 
             return View(contentvalues); 
-        }
+        } 
     }
 }
